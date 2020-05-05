@@ -13,11 +13,11 @@ pip install virtualenv
 virtualenv venv
 ```
 * Begin to use env :
-- Windows: 
+> Windows: 
 ```
 env\Scripts\activate
 ```
-- Linux:
+> Linux:
 ```
 source /env/bin/activate
 ```
