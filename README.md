@@ -72,3 +72,44 @@ Listen on all available public IPs use: (0 is a shortcut for 0.0.0.0. )
 ```
 py manage.py runserver 0:8000
 ```
+
+### 3) Creation application and Work with rooting in Django:
+* we need to be at the same level of manage.py before to run this:
+```
+python manage.py startapp polls
+```
+that will create :
+```
+polls/
+    __init__.py
+    admin.py
+    apps.py
+    migrations/
+        __init__.py
+    models.py
+    tests.py
+    views.py
+```
+* We will add a file urls.py :
+```
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+```
+and put something in views.py : 
+```
+from django.http import HttpResponse
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+```
+that will read our function index when we enter in /polls/
+
+* For rooting our new app
+And in test_site/urls.py  we will import include and this line: 
+```
+path('polls/', include('polls.urls')), 
+```
+relaunch our server
+Now we can check the URL: http://localhost:8000/polls/
