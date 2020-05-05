@@ -9,4 +9,4 @@ pip install -r requirements.txt
 ```
 
 We put the CI for run tests :
-[GitHub](https://github.com/YonathanGuez/django_training/blob/master/.github/workflows/pythonapp.yml)
+[.github/workflows/pythonapp.yml](https://github.com/YonathanGuez/django_training/blob/master/.github/workflows/pythonapp.yml)
