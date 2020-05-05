@@ -3,10 +3,34 @@ Training Django
 
 ## Install all package : 
 
-first step it's to install all packages int the environement
+### If you use viratel environement :
+* Install virtual environement : 
+```
+pip install virtualenv
+```
+* Create a virtual environment for a project : 
+```
+virtualenv venv
+```
+* Begin to use env :
+- Windows: 
+```
+env\Scripts\activate
+```
+- Linux:
+```
+source /env/bin/activate
+```
+* For stop : 
+```
+deactivate
+```
+
+### Install all packages:
 ```
 pip install -r requirements.txt
 ```
-
+### Remarque :
 We put the CI for run tests :
 [.github/workflows/pythonapp.yml](https://github.com/YonathanGuez/django_training/blob/master/.github/workflows/pythonapp.yml)
+for the beging that will test only test_pytest.py
