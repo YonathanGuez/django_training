@@ -113,3 +113,23 @@ path('polls/', include('polls.urls')),
 ```
 relaunch our server
 Now we can check the URL: http://localhost:8000/polls/
+
+### 4) Database configuration:
+```
+python manage.py migrate
+```
+we will set in the database: 
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages',
+'django.contrib.staticfiles',
+
+1) We want to create database now : We will build a model into polls/models.py 
+2) For activate model in  settings.py we need to add a line into INSTALLED_APPS: 'polls.apps.PollsConfig'
+3) Indicate model change : python manage.py makemigrations polls
+3 bis) Indicate what kind of model : python manage.py sqlmigrate polls 0001
+4) add the new migration : python manage.py migrate
+
+
