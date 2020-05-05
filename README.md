@@ -3,7 +3,7 @@ Training Django
 
 ## Install all package : 
 
-### If you use viratel environement :
+### If you use virtual environment :
 * Install virtual environement : 
 ```
 pip install virtualenv
