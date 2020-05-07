@@ -132,4 +132,14 @@ we will set in the database:
 3 bis) Indicate what kind of model : python manage.py sqlmigrate polls 0001
 4) add the new migration : python manage.py migrate
 
+### 5) Create Superadmin 
+```
+python manage.py createsuperuser
+```
+Now we can manage some data in the administation
 
+### 6) Template :
+we need to build a folder into polls and by convention add an other folder with the same 
+name as our app (in this example polls )
+i this folders we will put all template html we need 
+we will manage thoses templates with urls.py and views.py
