@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse, Http404
+from django.urls import reverse_lazy
 from .models import Question
 
 def index(request):
