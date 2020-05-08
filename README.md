@@ -144,4 +144,4 @@ name as our app (in this example polls )
 i this folders we will put all template html we need 
 we will manage thoses templates with urls.py and views.py
 
-![template and view](https://github.com/YonathanGuez/django_training/img/relationtemplate.png)
+![template and view](https://github.com/YonathanGuez/django_training/blob/site/img/relationtemplate.png?raw=true)
