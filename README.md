@@ -145,3 +145,11 @@ i this folders we will put all template html we need
 we will manage thoses templates with urls.py and views.py
 
 ![template and view](https://github.com/YonathanGuez/django_training/blob/site/img/relationtemplate.png?raw=true)
+
+### 7) Create Test :
+Test must be a file in polls the name of the file must begin by test or tests by convention 
+In this system it s will find automaticly  all tests if the name begin by test
+for launch tests in pools: 
+```
+python manage.py test polls
+```
