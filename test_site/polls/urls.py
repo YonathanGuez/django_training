@@ -15,3 +15,4 @@ urlpatterns = [
     #
     path('specifics/<int:question_id>/', views.detail, name='detail'),
 ]
+
