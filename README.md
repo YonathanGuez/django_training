@@ -153,3 +153,22 @@ for launch tests in pools:
 ```
 python manage.py test polls
 ```
+
+### 8) Static files : css , img ...
+we need to build a directory static in polls like templates
+static is in link with  STATICFILES_FINDERS  into Django
+AppDirectoriesFinder search « static » into each app of INSTALLED_APPS
+Into static we need also polls
+#### css:
+```
+polls/static/polls/style.css
+```
+load static styles.csspython manage.py runserver
+```
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+```
+#### images:
+```
+polls/static/polls/images/background.png
+```
