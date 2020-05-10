@@ -36,4 +36,5 @@ jobs:
         pytest
     - name: Test Django
       run: |
+        cd test_site
         python manage.py test
